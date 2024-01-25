@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hey Johnny</title>
+    <style>
+        body {
+            background-image: url('C:\Users\User\Desktop\here\pixel-city.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        h1 {
+            text-align: center;
+            font-size: 48px;
+        }
+        h2 {
+            text-align: center;
+            font-size: 36px;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 5px;
+            background-color: #f1f1f1;
+            color: #333;
+            text-decoration: none;
+            margin: 10px;
+        }
+        .button:hover {
+            background-color: #ddd;
+        }
+        .no-button {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            transition: all 0.5s ease;
+        }
+        .no-button.clicked {
+            left: -100px;
+            top: -100px;
+            transition: all 0.5s ease;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hey Johnny</h1>
+    <h2>Will you go out with me?</h2>
+    <img src="gif.gif" alt="C:\Users\User\Desktop\here\7V0.gif">
+    <a href="https://wa.me/77077121585?text=Yes%2C%20i%20will" class="button">Yes</a>
+    <button class="button no-button" onclick="this.classList.add('clicked')">No</button>
+</body>
+</html>
